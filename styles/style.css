@@ -1,0 +1,47 @@
+/* Google Font */
+.inter {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+.noto-serif {
+	font-family: "Noto Serif", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+body {
+	background-color: #f5f8ff;
+}
+header {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* header styles */
+
+/* nav-bar styles */
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-links {
+	display: flex;
+	gap: 48px;
+	list-style: none;
+}
+.nav-link {
+	text-decoration: none;
+	color: #8987a1;
+}
+#home {
+	color: #252432;
+	font-weight: 700;
+}
+#cart {
+	color: black;
+	margin-left: 10px;
+}
