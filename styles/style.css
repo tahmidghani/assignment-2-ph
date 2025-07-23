@@ -18,10 +18,18 @@
 
 body {
 	background-color: #f5f8ff;
+	margin: 0 5px;
 }
 header {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+section {
+	margin-bottom: 120px;
+}
+
+p {
+	font-size: 1.375rem;
 }
 
 /* shared styles */
@@ -35,6 +43,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 30px;
 	margin-bottom: 120px;
 }
 .nav-links {
@@ -45,6 +54,7 @@ header {
 .nav-link {
 	text-decoration: none;
 	color: #8987a1;
+	font-size: 1rem;
 }
 #home {
 	color: #252432;
@@ -60,6 +70,9 @@ header {
 	display: flex;
 	align-items: end;
 }
+.banner img {
+	max-width: 50%;
+}
 .banner-content {
 	max-width: 50%;
 }
@@ -71,4 +84,45 @@ header {
 }
 #banner-text-orange {
 	color: #e95a08;
+}
+
+/* responsive style for mobile */
+@media screen and (max-width: 576px) {
+	body {
+		margin: 0;
+	}
+	p {
+		font-size: 0.875rem;
+	}
+	.nav-bar {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	.nav-bar img {
+		height: 40px;
+	}
+	.nav-link {
+		display: none;
+	}
+	#cart {
+		display: inline;
+	}
+
+	.banner {
+		flex-direction: column-reverse;
+		align-items: end;
+	}
+	.banner-content {
+		max-width: 100%;
+		margin-top: 28px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	.banner-content h1 {
+		font-size: 1.5rem;
+	}
+
+	.banner img {
+		max-width: 100%;
+	}
 }
