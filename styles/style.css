@@ -8,7 +8,7 @@
 .noto-serif {
 	font-family: "Noto Serif", serif;
 	font-optical-sizing: auto;
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
 }
@@ -139,15 +139,55 @@ h2 {
 	font-weight: 700;
 }
 
+/* flower-lover section styles*/
+.flower-lover {
+	display: flex;
+	gap: 60px;
+	align-items: center;
+}
+.flower-image {
+	width: 50%;
+	position: relative;
+}
+.flower-lover-content {
+	width: 50%;
+}
+
+#flower-store {
+	width: 100%;
+}
+.badge {
+	position: absolute;
+	top: -20%;
+	right: -20%;
+}
+#badge {
+	width: 286px;
+	widows: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
+}
+.flower-list {
+	font-size: 1.375rem;
+}
+.flower-list-item {
+	margin-top: 20px;
+}
 /* responsive style for mobile */
 @media screen and (max-width: 576px) {
 	body {
 		margin: 0;
 	}
+	section {
+		margin-bottom: 60px;
+	}
 	p {
 		font-size: 0.875rem;
 	}
-	.nav-bar {
+	h2 {
+		font-size: 1.5rem;
+	}
+	.nav-bar,
+	.our-plant,
+	.flower-lover {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -191,5 +231,21 @@ h2 {
 	}
 	.plant-item .btn-primary {
 		padding: 20px 20px;
+	}
+	.flower-lover {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.flower-lover-content {
+		width: 100%;
+	}
+	.flower-image {
+		width: 100%;
+	}
+	.badge {
+		display: none;
+	}
+	.flower-list-item {
+		font-size: 0.875rem;
 	}
 }
