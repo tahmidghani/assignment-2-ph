@@ -23,10 +23,14 @@ body {
 header,
 .our-plant,
 .flower-lover,
-.latest-deal {
+.latest-deal,
+footer {
 	max-width: 1140px;
 	margin: 0 auto;
 	margin-bottom: 120px;
+}
+footer {
+	margin-bottom: 30px;
 }
 section {
 	margin-bottom: 120px;
@@ -282,6 +286,41 @@ a {
 	left: 100%;
 }
 
+/* footer section styles */
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 110px;
+}
+#logo {
+	height: 80px;
+	width: fit-content;
+	margin-bottom: 16px;
+}
+.footer-box {
+	display: flex;
+	flex-direction: column;
+}
+.footer-links {
+	gap: 32px;
+}
+.footer-links a {
+	text-decoration: none;
+}
+.footer-box-1 {
+	max-width: 360px;
+}
+
+.social-icons {
+	flex-direction: row;
+	gap: 24px;
+	height: 36px;
+	align-items: center;
+	width: auto;
+}
+
 /* responsive style for mobile */
 @media screen and (max-width: 576px) {
 	body {
@@ -303,7 +342,9 @@ a {
 	}
 	.nav-bar,
 	.our-plant,
-	.flower-lover {
+	.flower-lover,
+	.join-form,
+	footer {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -385,5 +426,19 @@ a {
 	.join-form .btn-form {
 		width: 100%;
 		padding: 10px;
+	}
+	.footer-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.footer-box-1 {
+		max-width: fit-content;
+	}
+	.footer-box p {
+		font-size: 1rem;
+	}
+	.footer-links {
+		font-size: 1rem;
+		gap: 20px;
 	}
 }
