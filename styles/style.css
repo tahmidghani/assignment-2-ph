@@ -321,6 +321,19 @@ a {
 	width: auto;
 }
 
+/* badge-spin animation styles */
+.badge {
+	animation: spin 5s linear infinite;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 /* responsive style for mobile */
 @media screen and (max-width: 576px) {
 	body {
