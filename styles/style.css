@@ -171,7 +171,6 @@ h2 {
 }
 #badge {
 	width: 286px;
-	widows: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
 }
 .flower-list {
 	font-size: 1.375rem;
@@ -322,7 +321,7 @@ a {
 }
 
 /* badge-spin animation styles */
-.badge {
+#badge {
 	animation: spin 5s linear infinite;
 }
 @keyframes spin {
